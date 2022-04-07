@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.androidlearning">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:targetApi="n">
+        <activity
+            android:name=".frame.EventBusActivity"
+            android:exported="false"
+            android:label="@string/title_activity_event_bus"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".layout.LayoutActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".layout.gridview.GridViewActivity"
+            android:parentActivityName=".layout.LayoutActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".layout.LayoutActivity" />
+        </activity>
+        <activity
+            android:name=".layout.recyclerview.RecyclerViewActivity"
+            android:parentActivityName=".layout.LayoutActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".layout.LayoutActivity" />
+        </activity>
+        <activity
+            android:name=".layout.recyclerview.PuRecyclerViewActivity"
+            android:parentActivityName=".layout.recyclerview.RecyclerViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".layout.recyclerview.RecyclerViewActivity" />
+        </activity>
+        <activity
+            android:name=".layout.recyclerview.GridRecyclerViewActivity"
+            android:parentActivityName=".layout.recyclerview.RecyclerViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".layout.recyclerview.RecyclerViewActivity" />
+        </activity>
+        <activity
+            android:name=".layout.recyclerview.HorRecyclerViewActivity"
+            android:parentActivityName=".layout.recyclerview.RecyclerViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".layout.recyclerview.RecyclerViewActivity" />
+        </activity>
+        <activity
+            android:name=".layout.recyclerview.LinearRecyclerViewActivity"
+            android:parentActivityName=".layout.recyclerview.RecyclerViewActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".layout.recyclerview.RecyclerViewActivity" />
+        </activity>
+        <activity
+            android:name=".layout.WebViewActivity"
+            android:parentActivityName=".layout.LayoutActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".layout.LayoutActivity" />
+        </activity>
+        <activity
+            android:name=".ui.UIActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity> <!-- todo:以后再改跳转父子逻辑，太多了 -->
+        <activity
+            android:name=".frame.FrameActivity"
+            android:exported="false"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".frame.OKHttpActivity"
+            android:exported="false"
+            android:parentActivityName=".frame.FrameActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".frame.FrameActivity" />
+        </activity>
+        <activity
+            android:name=".storage.DatabaseActivity"
+            android:exported="false" />
+        <activity
+            android:name=".asynctask.AsyncTaskActivity"
+            android:exported="false" />
+        <activity
+            android:name=".network.NetworkOperationActivity"
+            android:exported="false" />
+        <activity android:name=".ObjectAnimationActivity" />
+        <activity android:name=".broadcast.BroadActivity2" />
+        <activity android:name=".broadcast.BroadActivity" />
+        <activity android:name=".storage.FileActivity" />
+        <activity android:name=".storage.SharedPerferencesActivity" />
+        <activity android:name=".storage.DataStorageActivity" />
+        <activity android:name=".handler.HandlerActivity" />
+        <activity android:name=".event.EventActivity" />
+        <activity android:name=".fragment.ContainerActivity" />
+        <activity
+            android:name=".activity.jump.BActivity"
+            android:label="B"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.example.hello.test.BActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.jump.AActivity"
+            android:label="A" />
+        <activity android:name=".ui.PopupWindowActivity" />
+        <activity android:name=".ui.CustomDialogActivity" />
+        <activity android:name=".ui.ProgressActivity" />
+        <activity android:name=".ui.DialogActivity" />
+        <activity android:name=".ui.ToastActivity" />
+        <activity android:name=".ui.ImageViewActivity" />
+        <activity android:name=".ui.CheckBoxActivity" />
+        <activity android:name=".ui.RadioButtonActivity" />
+        <activity android:name=".ui.EditTextActivity" />
+        <activity android:name=".ui.ButtonActivity" />
+        <activity android:name=".ui.TextViewActivity" />
+        <activity android:name=".ui.listview.ListViewActivity" />
+        <activity
+            android:name=".activity.LifeRecycleActivity"
+            android:label="Test"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ui.expandable_list_view.ExpandableListViewActivity" />
+        <activity
+            android:name=".activity.ActivityActivity"
+            android:exported="false"></activity>
+    </application>
+
+</manifest>

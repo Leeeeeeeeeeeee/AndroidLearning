@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    用于设置ExpandableListView的Indicator-->
+    <!--    <item android:drawable="@drawable/ic_group_indicator_right" android:state_expanded="true" />-->
+    <!--    用于设置内部的parent_layout的作为Imageview的Indicator-->
+    <item android:drawable="@drawable/ic_group_indicator_right" android:state_selected="true" />
+    <item android:drawable="@drawable/ic_group_indicator_drop" />
+</selector>
