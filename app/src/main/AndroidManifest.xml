@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".storage.greendao.GreenDaoApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -17,11 +18,18 @@
         android:theme="@style/AppTheme"
         tools:targetApi="n">
         <activity
+            android:name=".storage.greendao.GoodsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".storage.greendao.GreenDaoActivity"
+            android:exported="false" />
+        <activity
             android:name=".frame.EventBusActivity"
             android:exported="false"
             android:label="@string/title_activity_event_bus"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -129,8 +137,8 @@
         <activity android:name=".fragment.ContainerActivity" />
         <activity
             android:name=".activity.jump.BActivity"
-            android:label="B"
-            android:exported="false">
+            android:exported="false"
+            android:label="B">
             <intent-filter>
                 <action android:name="com.example.hello.test.BActivity" />
 
@@ -145,7 +153,7 @@
         <activity android:name=".ui.ProgressActivity" />
         <activity android:name=".ui.DialogActivity" />
         <activity android:name=".ui.ToastActivity" />
-        <activity android:name=".ui.ImageViewActivity" />
+        <activity android:name=".ui.imageview.ImageViewActivity" />
         <activity android:name=".ui.CheckBoxActivity" />
         <activity android:name=".ui.RadioButtonActivity" />
         <activity android:name=".ui.EditTextActivity" />
@@ -159,7 +167,7 @@
         <activity android:name=".ui.expandable_list_view.ExpandableListViewActivity" />
         <activity
             android:name=".activity.ActivityActivity"
-            android:exported="false"></activity>
+            android:exported="false" />
     </application>
 
 </manifest>

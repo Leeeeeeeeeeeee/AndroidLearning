@@ -14,7 +14,7 @@ public class ChapterBiz {
     public static final String URL = "www.imooc.com/api/expandablelistview";
 
     public void loadDatas(Context context, CallBack callBack, boolean useCache) {
-        AsyncTask<Boolean, Void, List<Chapter> asyncTask = new AsyncTask<Boolean, Void, List<Chapter>>() {
+        AsyncTask<Boolean, Void, List<Chapter>> asyncTask = new AsyncTask<Boolean, Void, List<Chapter>>() {
 
             private Exception ex;
 
@@ -65,7 +65,11 @@ public class ChapterBiz {
 
     private List<Chapter> parseContent(String content) {
         List<Chapter> chapterList = new ArrayList<>();
-        JSONObject root = new JSONObject(content);
+        try {
+            JSONObject root = new JSONObject(content);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         return chapterList;
     }

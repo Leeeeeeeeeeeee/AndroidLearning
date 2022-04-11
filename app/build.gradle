@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'org.greenrobot.greendao'
 
 android {
     compileSdkVersion 31
@@ -48,7 +49,15 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //图片加载框架Glide
     implementation 'com.github.bumptech.glide:glide:4.11.0'
-    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'//高级使用
+
+    //数据库框架
+    implementation 'org.greenrobot:greendao:3.3.0'
+    implementation "net.zetetic:android-database-sqlcipher:4.5.0"//数据库加密插件
+
+    //gson
     implementation 'com.google.code.gson:gson:2.8.6'
 }

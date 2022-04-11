@@ -9,6 +9,7 @@ import android.widget.Button;
 
 import com.example.androidlearning.R;
 import com.example.androidlearning.ui.expandable_list_view.ExpandableListViewActivity;
+import com.example.androidlearning.ui.imageview.ImageViewActivity;
 import com.example.androidlearning.ui.listview.ListViewActivity;
 
 public class UIActivity extends AppCompatActivity {

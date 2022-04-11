@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 import com.example.androidlearning.R;
+import com.example.androidlearning.storage.greendao.GreenDaoActivity;
 
 public class DataStorageActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -17,7 +18,7 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_local_storage);
+        setContentView(R.layout.activity_data_storage);
 
         mBtnSharedPreferences = (Button) findViewById(R.id.btn_sharedpreferences);
         mBtnFile = (Button) findViewById(R.id.btn_file);
@@ -26,6 +27,7 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
         mBtnFile.setOnClickListener(this);
 
         findViewById(R.id.btn_db).setOnClickListener(this);
+        findViewById(R.id.btn_greendao).setOnClickListener(this);
     }
 
     @Override
@@ -40,6 +42,9 @@ public class DataStorageActivity extends AppCompatActivity implements View.OnCli
                 break;
             case R.id.btn_db:
                 intent = new Intent(DataStorageActivity.this, DatabaseActivity.class);
+                break;
+            case R.id.btn_greendao:
+                intent = new Intent(DataStorageActivity.this, GreenDaoActivity.class);
                 break;
         }
         startActivity(intent);

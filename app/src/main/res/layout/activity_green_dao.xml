@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".storage.greendao.GreenDaoActivity">
+
+    <TextView
+        android:id="@+id/tv_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="#cccccc"
+        android:padding="10dp"
+        android:text="进货"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/tv_all"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:padding="10dp"
+        android:text="全部"
+        app:layout_constraintLeft_toRightOf="@id/tv_insert"
+        app:layout_constraintRight_toLeftOf="@id/tv_fruits"
+        app:layout_constraintTop_toTopOf="@id/tv_insert" />
+
+    <TextView
+        android:id="@+id/tv_fruits"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:padding="10dp"
+        android:text="水果"
+        app:layout_constraintLeft_toRightOf="@id/tv_all"
+        app:layout_constraintRight_toLeftOf="@id/tv_snacks"
+        app:layout_constraintTop_toTopOf="@id/tv_insert" />
+
+    <TextView
+        android:id="@+id/tv_snacks"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#cccccc"
+        android:padding="10dp"
+        android:text="零食"
+        app:layout_constraintLeft_toRightOf="@id/tv_fruits"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_insert" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_show"
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_insert" />
+</androidx.constraintlayout.widget.ConstraintLayout>
