@@ -20,6 +20,7 @@ import com.example.androidlearning.handler.HandlerActivity;
 import com.example.androidlearning.layout.LayoutActivity;
 import com.example.androidlearning.network.NetworkOperationActivity;
 import com.example.androidlearning.ui.UIActivity;
+import com.example.androidlearning.webview.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.btn_frame).setOnClickListener(onClick);
         findViewById(R.id.btn_activity).setOnClickListener(onClick);
+        findViewById(R.id.btn_web_view).setOnClickListener(onClick);
     }
 
     class OnClick implements View.OnClickListener {
@@ -99,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_frame:
                     intent = new Intent(MainActivity.this, FrameActivity.class);
                     break;
+                case R.id.btn_web_view:
+                    intent = new Intent(MainActivity.this, WebViewActivity.class);
             }
             startActivity(intent);
         }

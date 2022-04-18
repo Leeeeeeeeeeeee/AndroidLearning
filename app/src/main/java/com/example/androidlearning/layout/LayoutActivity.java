@@ -9,6 +9,7 @@ import android.view.View;
 import com.example.androidlearning.R;
 import com.example.androidlearning.layout.gridview.GridViewActivity;
 import com.example.androidlearning.layout.recyclerview.RecyclerViewActivity;
+import com.example.androidlearning.webview.WebViewOldActivity;
 
 public class LayoutActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -36,7 +37,7 @@ public class LayoutActivity extends AppCompatActivity implements View.OnClickLis
             }
             break;
             case R.id.btn_web_view: {
-                Intent intent = new Intent(LayoutActivity.this, WebViewActivity.class);
+                Intent intent = new Intent(LayoutActivity.this, WebViewOldActivity.class);
                 startActivity(intent);
             }
             break;

@@ -1,4 +1,4 @@
-package com.example.androidlearning.layout;
+package com.example.androidlearning.webview;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
@@ -15,14 +15,14 @@ import android.webkit.WebViewClient;
 
 import com.example.androidlearning.R;
 
-public class WebViewActivity extends AppCompatActivity {
+public class WebViewOldActivity extends AppCompatActivity {
 
     private WebView mWvMain;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_web_view);
+        setContentView(R.layout.activity_web_view_old);
         mWvMain=(WebView)findViewById(R.id.wv);
         //加载本地HTML
         //mWvMain.loadUrl("file:///android_asset/test.html");

@@ -18,6 +18,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="n">
         <activity
+            android:name=".webview.WebViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".storage.greendao.GoodsDetailsActivity"
             android:exported="false" />
         <activity
@@ -88,7 +91,7 @@
                 android:value=".layout.recyclerview.RecyclerViewActivity" />
         </activity>
         <activity
-            android:name=".layout.WebViewActivity"
+            android:name=".webview.WebViewOldActivity"
             android:parentActivityName=".layout.LayoutActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
