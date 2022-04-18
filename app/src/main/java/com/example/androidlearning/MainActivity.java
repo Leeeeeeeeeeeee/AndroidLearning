@@ -14,6 +14,7 @@ import com.example.androidlearning.asynctask.AsyncTaskActivity;
 import com.example.androidlearning.broadcast.BroadActivity;
 import com.example.androidlearning.event.EventActivity;
 import com.example.androidlearning.frame.FrameActivity;
+import com.example.androidlearning.webview.BaseWebViewActivity;
 import com.example.androidlearning.storage.DataStorageActivity;
 import com.example.androidlearning.fragment.ContainerActivity;
 import com.example.androidlearning.handler.HandlerActivity;
@@ -56,6 +57,7 @@ public class MainActivity extends AppCompatActivity {
 
         findViewById(R.id.btn_frame).setOnClickListener(onClick);
         findViewById(R.id.btn_activity).setOnClickListener(onClick);
+        findViewById(R.id.btn_web_view).setOnClickListener(onClick);
     }
 
     class OnClick implements View.OnClickListener {
@@ -98,6 +100,9 @@ public class MainActivity extends AppCompatActivity {
                     break;
                 case R.id.btn_frame:
                     intent = new Intent(MainActivity.this, FrameActivity.class);
+                    break;
+                case R.id.btn_web_view:
+                    intent = new Intent(MainActivity.this, BaseWebViewActivity.class);
                     break;
             }
             startActivity(intent);

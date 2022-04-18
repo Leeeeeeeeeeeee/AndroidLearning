@@ -19,7 +19,6 @@ public class LayoutActivity extends AppCompatActivity implements View.OnClickLis
 
         findViewById(R.id.btn_gridview).setOnClickListener(this);
         findViewById(R.id.btn_recyclerview).setOnClickListener(this);
-        findViewById(R.id.btn_web_view).setOnClickListener(this);
     }
 
     @Override
@@ -32,11 +31,6 @@ public class LayoutActivity extends AppCompatActivity implements View.OnClickLis
             break;
             case R.id.btn_recyclerview: {
                 Intent intent = new Intent(LayoutActivity.this, RecyclerViewActivity.class);
-                startActivity(intent);
-            }
-            break;
-            case R.id.btn_web_view: {
-                Intent intent = new Intent(LayoutActivity.this, WebViewActivity.class);
                 startActivity(intent);
             }
             break;
