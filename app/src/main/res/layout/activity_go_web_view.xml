@@ -13,11 +13,13 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btn_can_go_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CanGoBack" />
 
         <Button
+            android:id="@+id/btn_go_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="GoBack" />
@@ -29,11 +31,13 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btn_can_go_forward"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CanGoForward" />
 
         <Button
+            android:id="@+id/btn_go_forward"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="GoForward" />
@@ -50,15 +54,23 @@
         android:orientation="horizontal">
 
         <Button
+            android:id="@+id/btn_can_go_back_or_forward"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="CanGoBackOrForward" />
 
         <Button
+            android:id="@+id/btn_go_back_or_forward"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="GoBackOrForward" />
     </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_clear_history"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ClearHistory" />
 
     <WebView
         android:id="@+id/web_view"

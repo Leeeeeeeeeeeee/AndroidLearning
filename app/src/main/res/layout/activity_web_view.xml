@@ -11,11 +11,23 @@
         android:id="@+id/btn_base"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="基本使用" />
+        android:text="四种加载方式" />
 
     <Button
         android:id="@+id/btn_goto"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="跳转" />
+
+    <Button
+        android:id="@+id/btn_state"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="状态管理" />
+
+    <Button
+        android:id="@+id/btn_settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="WebSettings使用" />
 </LinearLayout>

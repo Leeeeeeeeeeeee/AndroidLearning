@@ -1,10 +1,12 @@
-package com.example.androidlearning;
+package com.example.androidlearning.animation;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.animation.ObjectAnimator;
 import android.os.Bundle;
 import android.widget.TextView;
+
+import com.example.androidlearning.R;
 
 public class ObjectAnimationActivity extends AppCompatActivity {
 

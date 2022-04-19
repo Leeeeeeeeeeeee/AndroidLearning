@@ -17,6 +17,12 @@
         android:theme="@style/AppTheme"
         tools:targetApi="n">
         <activity
+            android:name=".webview.WebSettingsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".webview.StateWebViewActivity"
+            android:exported="false" />
+        <activity
             android:name=".webview.WebViewActivity"
             android:exported="false" />
         <activity
@@ -93,7 +99,7 @@
                 android:value=".layout.recyclerview.RecyclerViewActivity" />
         </activity>
         <activity
-            android:name=".webview.BaseWebViewActivity"
+            android:name=".webview.LoadWebViewActivity"
             android:parentActivityName=".layout.LayoutActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -131,7 +137,7 @@
         <activity
             android:name=".network.NetworkOperationActivity"
             android:exported="false" />
-        <activity android:name=".ObjectAnimationActivity" />
+        <activity android:name=".animation.ObjectAnimationActivity" />
         <activity android:name=".broadcast.BroadActivity2" />
         <activity android:name=".broadcast.BroadActivity" />
         <activity android:name=".storage.FileActivity" />

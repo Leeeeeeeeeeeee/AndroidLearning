@@ -16,26 +16,17 @@ import android.webkit.WebViewClient;
 
 import com.example.androidlearning.R;
 
-<<<<<<< HEAD:app/src/main/java/com/example/androidlearning/webview/BaseWebViewActivity.java
-public class BaseWebViewActivity extends AppCompatActivity {
-=======
-public class WebViewOldActivity extends AppCompatActivity {
->>>>>>> 4f89b4c819bb13024c18ad0563890e46d826a979:app/src/main/java/com/example/androidlearning/webview/WebViewOldActivity.java
-
+public class LoadWebViewActivity extends AppCompatActivity {
     private WebView mWvMain;
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-<<<<<<< HEAD:app/src/main/java/com/example/androidlearning/webview/BaseWebViewActivity.java
-        setContentView(R.layout.activity_base_web_view);
+        setContentView(R.layout.activity_load_web_view);
         //找到控件
         mWvMain = findViewById(R.id.wv);
-=======
-        setContentView(R.layout.activity_web_view_old);
-        mWvMain=(WebView)findViewById(R.id.wv);
->>>>>>> 4f89b4c819bb13024c18ad0563890e46d826a979:app/src/main/java/com/example/androidlearning/webview/WebViewOldActivity.java
+        mWvMain = (WebView) findViewById(R.id.wv);
         //加载本地HTML
         //mWvMain.loadUrl("file:///android_asset/test.html");
 //        mWvMain.loadUrl("file://" + Environment.getExternalStorageDirectory() + File.separator + "1.html");
@@ -46,7 +37,7 @@ public class WebViewOldActivity extends AppCompatActivity {
         //加载网页链接
 //        mWvMain.loadUrl("https://m.baidu.com");
         //加载网络URL
-        if(Build.VERSION.SDK_INT>=Build.VERSION_CODES.KITKAT) {
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT) {
             //启动debug模式
             WebView.setWebContentsDebuggingEnabled(true);
         }
@@ -59,7 +50,6 @@ public class WebViewOldActivity extends AppCompatActivity {
         //mWvMain.evaluateJavascript();
         //mWvMain.addJavascriptInterface();
     }
-
     class MyWebViewClient extends WebViewClient {
         @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
         @Override

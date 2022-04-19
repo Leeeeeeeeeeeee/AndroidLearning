@@ -10,17 +10,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.androidlearning.animation.ObjectAnimationActivity;
 import com.example.androidlearning.asynctask.AsyncTaskActivity;
 import com.example.androidlearning.broadcast.BroadActivity;
 import com.example.androidlearning.event.EventActivity;
 import com.example.androidlearning.frame.FrameActivity;
-import com.example.androidlearning.webview.BaseWebViewActivity;
 import com.example.androidlearning.storage.DataStorageActivity;
 import com.example.androidlearning.fragment.ContainerActivity;
 import com.example.androidlearning.handler.HandlerActivity;
 import com.example.androidlearning.layout.LayoutActivity;
 import com.example.androidlearning.network.NetworkOperationActivity;
 import com.example.androidlearning.ui.UIActivity;
+import com.example.androidlearning.webview.WebViewActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -102,7 +103,7 @@ public class MainActivity extends AppCompatActivity {
                     intent = new Intent(MainActivity.this, FrameActivity.class);
                     break;
                 case R.id.btn_web_view:
-                    intent = new Intent(MainActivity.this, BaseWebViewActivity.class);
+                    intent = new Intent(MainActivity.this, WebViewActivity.class);
                     break;
             }
             startActivity(intent);
