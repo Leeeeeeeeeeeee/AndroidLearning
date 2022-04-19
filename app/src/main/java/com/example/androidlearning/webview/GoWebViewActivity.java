@@ -24,7 +24,7 @@ public class GoWebViewActivity extends AppCompatActivity {
     }
 
     public void onCanGoBack(View v) {
-        Toast.makeText(this, String.valueOf())
+        Toast.makeText(this, String.valueOf());
     }
 
     public void onGoBack(View v) {
