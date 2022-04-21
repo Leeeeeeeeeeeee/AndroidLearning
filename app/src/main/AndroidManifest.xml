@@ -17,6 +17,9 @@
         android:theme="@style/AppTheme"
         tools:targetApi="n">
         <activity
+            android:name=".webview.WebClientActivity"
+            android:exported="false" />
+        <activity
             android:name=".webview.WebSettingsActivity"
             android:exported="false" />
         <activity

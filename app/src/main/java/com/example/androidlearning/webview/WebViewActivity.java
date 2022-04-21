@@ -19,6 +19,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         findViewById(R.id.btn_goto).setOnClickListener(this);
         findViewById(R.id.btn_state).setOnClickListener(this);
         findViewById(R.id.btn_settings).setOnClickListener(this);
+        findViewById(R.id.btn_web_client).setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +42,11 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
             break;
             case R.id.btn_settings: {
                 Intent intent = new Intent(WebViewActivity.this, WebSettingsActivity.class);
+                startActivity(intent);
+            }
+            break;
+            case R.id.btn_web_client: {
+                Intent intent = new Intent(WebViewActivity.this, WebClientActivity.class);
                 startActivity(intent);
             }
             break;
