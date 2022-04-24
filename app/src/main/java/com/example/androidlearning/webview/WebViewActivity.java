@@ -20,6 +20,7 @@ public class WebViewActivity extends AppCompatActivity implements View.OnClickLi
         findViewById(R.id.btn_state).setOnClickListener(this);
         findViewById(R.id.btn_settings).setOnClickListener(this);
         findViewById(R.id.btn_web_client).setOnClickListener(this);
+        findViewById(R.id.btn_web_chrome_client).setOnClickListener(this);
     }
 
     @Override

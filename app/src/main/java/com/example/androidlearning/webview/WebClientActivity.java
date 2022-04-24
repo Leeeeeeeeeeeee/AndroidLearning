@@ -8,6 +8,7 @@ import android.graphics.Bitmap;
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
+import android.webkit.WebResourceError;
 import android.webkit.WebResourceRequest;
 import android.webkit.WebResourceResponse;
 import android.webkit.WebView;
@@ -18,6 +19,7 @@ import com.example.androidlearning.R;
 public class WebClientActivity extends AppCompatActivity {
 
     private static final String TAG = "<WebClientActivity";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,7 +30,31 @@ public class WebClientActivity extends AppCompatActivity {
 
         WebView webView = findViewById(R.id.web_view);
         webView.loadUrl("https://m.baidu.com");
-        webView.setWebViewClient(new WebViewClient(){
+        webView.setWebViewClient(new WebViewClient() {
+
+            /**
+             *
+             * @param view
+             * @param request
+             * @param error
+             */
+            @Override
+            public void onReceivedError(WebView view, WebResourceRequest request, WebResourceError error) {
+                super.onReceivedError(view, request, error);
+            }
+
+            /**
+             * 安卓6.0
+             * @param view
+             * @param errorCode
+             * @param description
+             * @param failingUrl
+             */
+            @Override
+            public void onReceivedError(WebView view, int errorCode, String description, String failingUrl) {
+                super.onReceivedError(view, errorCode, description, failingUrl);
+            }
+
             /**
              *
              * @param view
@@ -65,6 +91,26 @@ public class WebClientActivity extends AppCompatActivity {
             @Override
             public void onPageStarted(WebView view, String url, Bitmap favicon) {
                 super.onPageStarted(view, url, favicon);
+            }
+
+            /**
+             *
+             * @param view
+             * @param url
+             */
+            @Override
+            public void onLoadResource(WebView view, String url) {
+                super.onLoadResource(view, url);
+            }
+
+            /**
+             *
+             * @param view
+             * @param url
+             */
+            @Override
+            public void onPageFinished(WebView view, String url) {
+                super.onPageFinished(view, url);
             }
         });
     }

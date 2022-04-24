@@ -17,6 +17,12 @@
         android:theme="@style/AppTheme"
         tools:targetApi="n">
         <activity
+            android:name=".webview.JsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".webview.WebChromeClientActivity"
+            android:exported="false" />
+        <activity
             android:name=".webview.WebClientActivity"
             android:exported="false" />
         <activity
