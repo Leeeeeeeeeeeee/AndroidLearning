@@ -16,6 +16,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:targetApi="n">
+        <service
+            android:name=".service.MyService"
+            android:enabled="true"
+            android:exported="true"></service>
+
+        <activity
+            android:name=".service.ServiceActivity"
+            android:exported="false" />
         <activity
             android:name=".webview.JsActivity"
             android:exported="false" />
@@ -188,6 +196,8 @@
         <activity
             android:name=".activity.ActivityActivity"
             android:exported="false" />
+
+<!--        <service android:name=".service.MyService" />-->
     </application>
 
 </manifest>
