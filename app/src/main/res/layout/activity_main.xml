@@ -1,107 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/btn_layout"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="布局"
-        android:textAllCaps="false" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <Button
-        android:id="@+id/btn_ui"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="UI控件"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="布局"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_fragment"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Fragment"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_ui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="UI控件"
+            android:textAllCaps="false" />
 
-
-    <Button
-        android:id="@+id/btn_activity"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Activity"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Fragment"
+            android:textAllCaps="false" />
 
 
-    <Button
-        android:id="@+id/btn_event"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="事件"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_activity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Activity"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_broad"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="广播"
-        android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_local_storage"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="本地存储"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_event"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="事件"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_objectanim"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="动画"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_broad"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="广播"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_handler"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Handler"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_local_storage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="本地存储"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_network_operation"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="网络操作"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_objectanim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="动画"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_async_task"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="AsyncTask"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_handler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Handler"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_frame"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="开源框架"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_network_operation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="网络操作"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_web_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="WebView"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_async_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="AsyncTask"
+            android:textAllCaps="false" />
 
-    <Button
-        android:id="@+id/btn_service"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Service"
-        android:textAllCaps="false" />
+        <Button
+            android:id="@+id/btn_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="开源框架"
+            android:textAllCaps="false" />
 
-</LinearLayout>
+        <Button
+            android:id="@+id/btn_web_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="WebView"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_service"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Service"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/btn_content_provider"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ContentProvider"
+            android:textAllCaps="false" />
+
+    </LinearLayout>
+
+</ScrollView>
