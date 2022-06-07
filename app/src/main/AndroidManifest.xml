@@ -19,6 +19,21 @@
         android:theme="@style/AppTheme"
         tools:targetApi="n">
         <activity
+            android:name=".animation.Activity2TransitionAnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation.ActivityTransitionAnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation.ViewTransitionAnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation.RevealAnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".animation.AnimationActivity"
+            android:exported="false" />
+        <activity
             android:name=".contentProvider.ContentProviderActivity"
             android:exported="false" />
 

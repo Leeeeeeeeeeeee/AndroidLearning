@@ -5,12 +5,12 @@ import androidx.core.app.ActivityCompat;
 
 import android.Manifest;
 import android.annotation.SuppressLint;
-import android.content.ContentProvider;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.androidlearning.animation.AnimationActivity;
 import com.example.androidlearning.animation.ObjectAnimationActivity;
 import com.example.androidlearning.asynctask.AsyncTaskActivity;
 import com.example.androidlearning.broadcast.BroadActivity;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity {
         Button mBtnEvent = findViewById(R.id.btn_event);
         Button mBtnDataStorage = findViewById(R.id.btn_local_storage);
         Button mBtnBroad = findViewById(R.id.btn_broad);
-        Button mBtnObjectAnim = findViewById(R.id.btn_objectanim);
+        Button mBtnObjectAnim = findViewById(R.id.btn_anim);
         Button mBtnNetworkOperation = findViewById(R.id.btn_network_operation);
         Button mBtnHandler = findViewById(R.id.btn_handler);
         Button mBtnAsyncTask = findViewById(R.id.btn_async_task);
@@ -92,8 +92,8 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_broad:
                     intent = new Intent(MainActivity.this, BroadActivity.class);
                     break;
-                case R.id.btn_objectanim:
-                    intent = new Intent(MainActivity.this, ObjectAnimationActivity.class);
+                case R.id.btn_anim:
+                    intent = new Intent(MainActivity.this, AnimationActivity.class);
                     break;
                 case R.id.btn_network_operation:
                     intent = new Intent(MainActivity.this, NetworkOperationActivity.class);

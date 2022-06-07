@@ -52,8 +52,15 @@
         <entry key="..\:/develop/AndroidLearning/app/src/main/res/layout/item_db_list.xml" value="0.17300724637681159" />
         <entry key="..\:/develop/AndroidLearning/app/src/main/res/layout/item_list_json.xml" value="0.1" />
         <entry key="..\:/develop/AndroidLearning/app/src/main/res/xml/network_security_config.xml" value="0.1" />
+        <entry key="..\:/project/AndroidLearning/app/src/main/res/layout/activity_activity2_transition_animation.xml" value="0.253125" />
+        <entry key="..\:/project/AndroidLearning/app/src/main/res/layout/activity_animation.xml" value="0.1308411214953271" />
         <entry key="..\:/project/AndroidLearning/app/src/main/res/layout/activity_content_provider.xml" value="0.18613138686131386" />
         <entry key="..\:/project/AndroidLearning/app/src/main/res/layout/activity_main.xml" value="0.25364583333333335" />
+        <entry key="..\:/project/AndroidLearning/app/src/main/res/layout/activity_reveal_animation.xml" value="0.23802083333333332" />
+        <entry key="..\:/project/AndroidLearning/app/src/main/res/layout/activity_transition_animation.xml" value="0.14130434782608695" />
+        <entry key="..\:/project/AndroidLearning/app/src/main/res/layout/activity_view_transition_animation.xml" value="0.1" />
+        <entry key="..\:/project/AndroidLearning/app/src/main/res/layout/scene_info.xml" value="0.4" />
+        <entry key="..\:/project/AndroidLearning/app/src/main/res/layout/scene_overview.xml" value="0.1" />
       </map>
     </option>
   </component>
