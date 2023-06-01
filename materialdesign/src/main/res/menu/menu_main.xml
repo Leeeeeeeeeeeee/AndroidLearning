@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.qing.materialdesign.MainActivity">
+
+    <item
+        android:id="@+id/action_favorite"
+        android:icon="@drawable/ic_favourite"
+        android:title="Favourite"
+        app:showAsAction="ifRoom" />
+    <!-- Settings, should always be in the overflow -->
+    <item
+        android:id="@+id/action_settings"
+        android:title="Settings"
+        android:icon="@drawable/ic_settings"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_account"
+        android:orderInCategory="100"
+        android:title="Account"
+        android:icon="@drawable/ic_account"
+        app:showAsAction="never" />
+</menu>
